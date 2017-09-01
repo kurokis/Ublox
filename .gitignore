@@ -1,0 +1,6 @@
+/*.csv
+/UbloxReceiver/build
+/UbloxTest/build
+/.vscode
+/debug
+!*.gitkeep
