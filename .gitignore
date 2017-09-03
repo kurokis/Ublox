@@ -1,6 +1,7 @@
 /*.csv
 /UbloxReceiver/build
 /UbloxTest/build
+/UbloxGetCurrentPosition/build
 /.vscode
 /debug
 !*.gitkeep
