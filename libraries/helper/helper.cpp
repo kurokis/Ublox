@@ -230,7 +230,12 @@ void Reader_sender(void)
 	{
 	int i = mkfifo(name.c_str(), 0666);// S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
     	std::cout<<"\n fifo res : "<<i<<std::endl;
-	}
+	}else{
+    std::remove(name.c_str());
+    //system("rm /dev/gps_fifo")
+    int i = mkfifo(name.c_str(), 0666);// S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+    std::cout<<"\n fifo res : "<<i<<std::endl;
+  }
     int flag = O_WRONLY | O_NONBLOCK;//debug
     int dum = open(name.c_str(), O_RDONLY | O_NONBLOCK);
     int fifo_fd = open(name.c_str(), flag);
