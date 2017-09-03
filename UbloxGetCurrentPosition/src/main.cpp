@@ -39,7 +39,7 @@ int main(int argc, char const *argv[])
     {
         static int i = 0; // total number of data received
         //static int n = 0; // number of data stored
-        const int N = 100; // number of data to store
+        const int N = 300; // number of data to store
         static std::deque<struct UBXPayload> v_gps;
         i++;
 
